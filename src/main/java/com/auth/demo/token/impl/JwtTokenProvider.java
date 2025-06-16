@@ -3,14 +3,12 @@ package com.auth.demo.token.impl;
 import com.auth.demo.token.interfaces.TokenProvider;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
-import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 
 import java.security.Key;
 import java.util.Date;
 import java.util.function.Function;
 
-@AllArgsConstructor
 @Component
 public class JwtTokenProvider implements TokenProvider {
     private static final String SECRET_KEY = "clave_super_secreta_de_256bits_o_mas_que_sea_segura";

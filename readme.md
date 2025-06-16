@@ -61,3 +61,23 @@ Content-Type: application/json
 "token": "eyJhbGciOiJIUzI1NiIsInR..."
 }
 ```
+
+### ✅ Login - Manejo de errores
+```
+POST /auth/login
+Content-Type: application/json
+
+{
+    "username": ""
+}}
+```
+
+
+### Respuesta:
+```
+{
+    "error": "Validación fallida",
+    "message": "El campo 'username' no puede estar vacío o en blanco.",
+    "timestamp": "2025-06-16T18:56:24.474682"
+}
+```
